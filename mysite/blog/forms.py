@@ -15,3 +15,8 @@ class CommentForm(forms.ModelForm):
     class Meta:
         model = Comment
         fields = ('name', 'email', 'body')
+
+
+# Criando um formulário para pesquisa nas postagens
+class SearchForm(forms.Form):
+    query = forms.CharField()
